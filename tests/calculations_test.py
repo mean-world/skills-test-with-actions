@@ -88,11 +88,16 @@ def test_get_nth_fibonacci_ten():
 #       get_nth_fibonacci(n)
 
 
+import pytest
+
 def test_area_of_circle_negative_radius():
+    """Test with a negative radius to raise ValueError."""
     with pytest.raises(ValueError):
         area_of_circle(-1)
 
 def test_get_nth_fibonacci_negative():
+    """Test with a negative number to raise ValueError."""
     with pytest.raises(ValueError):
         get_nth_fibonacci(-1)
+
 
